@@ -1,0 +1,132 @@
+/* Include config */
+@import "config.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-color;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5em;
+}
+ul, li {
+    list-style: none;
+}
+em {
+    font-style: bold;
+    color: $primary-color;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.price-table-block {
+    float: left;
+    @if $columns == 4 {
+        width: 23%;
+    } @else if $columns == 3 {
+        width: 30%;
+    } @else if $columns == 2 {
+        width: 40%;
+    } @else {
+        width: 23%;
+    }
+    margin: 0 1%;
+    box-sizing: border-box;
+    background: #ffffff;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    h3 {
+        background: #333333;
+        font-size: 22px;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.price-table-block:hover {
+    border: $bg-color solid 5px;
+}
+
+.price-table-price {
+    text-align: center;
+    background: $primary-color;
+    padding: 20px;
+    color: #ffffff;
+    span {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+.price-table-features {
+    li {
+        line-height: 2em;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    em {
+        font-weight: bold;
+        .price-table-footer>a {
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+    li:nth-child(odd) {
+        background: #f4f4f4;
+    }
+}
+
+a.btn {
+    padding: 7px 10px;
+    border: #ccc 1px solid;
+    text-align: center;
+    display: block;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+a.btn-primary {
+    background-color: $secondary-color;
+    color: #ffffff;
+}
+
+a.btn-primary:hover {
+    background-color: $secondary-color-hover;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+}
+/* Features Pack Section */
+.highlight {
+    height: 520px;
+    border: #ffffff solid 4px;
+    margin-top: -30px;
+
+    a.btn {
+        margin-top: 25px;
+    }
+
+    li {
+        padding: 12px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Include mobile styles */
+    @import "mobile.scss";
+}
