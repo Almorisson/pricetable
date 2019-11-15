@@ -17,3 +17,4 @@ It's done !
 
 ### @author: Mor NDIAYE
 ### @contact: ndiaye_c@etna-alternance.net
+# pricetable
