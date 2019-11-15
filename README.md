@@ -15,6 +15,7 @@ the install is complete, `cd` to the right directory and run one of these comman
 
 It's done !
 
+### If your you want to contribute to any of my projects include this one, you can just clone the repo, make your changes and do a **PULL REQUEST**.
+
 ### @author: Mor NDIAYE
 ### @contact: ndiaye_c@etna-alternance.net
-# pricetable
