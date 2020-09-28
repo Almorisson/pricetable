@@ -1,5 +1,7 @@
 # Princing Table
 
+[Visit the project](https://almorisson.github.io/pricetable/)
+ 
 To test this mini template, you must install sass first in foremost. To do this, you can click in the link below to go in official website of SASS preprocessor.
 
 #### SASS Website -> https://sass-lang.com/install
